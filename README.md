@@ -10,4 +10,4 @@ As Ray Tracing for computer graphics where virtual light rays are "cast" or "tra
  # Usage
  Just open ``` index.html ``` on your default browser
 
- ![](./asstes/threeBound.png)
+ ![](./assets/threeBound.png)
