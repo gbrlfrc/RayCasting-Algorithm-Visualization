@@ -5,11 +5,24 @@ html, body {
 canvas {
     display: block;
 }
-.tools{
+.main{
   margin-left: 1%;
   display: flex;
   align-items: center;
-  p input{
+  justify-content: space-around;
+  .tools{
     flex: 1;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    p input{
+      flex: 1;
+    }
+  }
+  .radio{
+    flex :1;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
   }
 }

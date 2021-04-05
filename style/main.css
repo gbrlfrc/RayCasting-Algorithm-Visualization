@@ -7,7 +7,22 @@ canvas {
   display: block;
 }
 
-.tools {
+.main {
+  margin-left: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .tools {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-left: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,9 +32,22 @@ canvas {
           align-items: center;
 }
 
-.tools p input {
+.main .tools p input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.main .radio {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

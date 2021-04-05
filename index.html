@@ -11,11 +11,22 @@
 
     <title>2D RayCasting</title>
 </head>
-<body>
-    <div class='tools'>
-        <p>Number of boundary</p> 
-        <input type="range" min="1" max="5" value="1" id="slider" onchange="update()">
-        <p id='number'></p>    
+<body onload='update()'>
+    <div class='main'>
+        <div class='tools'>
+            <p>Number of boundary</p> 
+            <input type="range" min="1" max="5" value="1" id="slider" onchange="update()">
+            <p id='number'></p>    
+        </div>
+        <div class='radio'>
+            <input type="radio" name="shape" value="boundary"><label for="shape">Boundary</label>
+            <input type="radio" name="shape" value="rectangle"><label for="shape">Rectangle</label>
+            <input type="radio" name="shape" value="angle"><label for="shape">Angle</label>
+            <input type="radio" name="shape" value="random"><label for="shape">Random</label>
+        </div>
+        <div class='button'>
+            <input type='submit' value='submit' onclick="update()"></input>
+        </div>
     </div>
     <script src='./src/Boundary.js'></script>
     <script src='./src/Ray.js'></script>
