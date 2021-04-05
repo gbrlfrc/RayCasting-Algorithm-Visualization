@@ -87,6 +87,13 @@ const getShape = (opt) => {
         pt1 : { x : (windowDim.width/10)*6, y : (windowDim.height/10)*3},
         pt2 : { x : (windowDim.width/10)*7, y : (windowDim.height/10)*3}  
     }];
+    const randomBound = [];
+    for (let i=0; i< opt.bound; i++){
+        randomBound.push({
+            pt1:{x: random(window.innerWidth), y: random(window.innerHeight)},
+            pt2:{x: random(window.innerWidth), y: random(window.innerHeight)}
+        });            
+    }
 
     if (opt.shape === 'boundary'){
         if (opt.bound == 1) return oneBound;
@@ -97,14 +104,7 @@ const getShape = (opt) => {
     }else if (opt.shape === 'rectangle'){
         return rect;
     }else if (opt.shape === 'random'){
-        const r = [];
-        for (let i=0; i< opt.bound; i++){
-            r.push({
-                pt1:{x: random(window.innerWidth), y: random(window.innerHeight)},
-                pt2:{x: random(window.innerWidth), y: random(window.innerHeight)}
-            })            
-        }
-        return r;
+        return randomBound;
     }else {
         return angle;
     }
