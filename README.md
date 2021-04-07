@@ -7,7 +7,4 @@ As Ray Tracing for computer graphics where virtual light rays are "cast" or "tra
 
  <br/>
 
- # Usage
- Just open ``` index.html ``` on your default browser
-
  ![](./assets/threeBound.png)
